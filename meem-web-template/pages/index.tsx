@@ -3,9 +3,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { MeemAPI, MeemData, meemDataFromApiMeem } from '@meemproject/api'
+import { makeFetcher } from '@meemproject/react'
 import React, { useEffect } from 'react'
 import useSWR from 'swr'
-import { makeFetcher } from '../lib/fetcher'
 
 const Home: NextPage = () => {
 
