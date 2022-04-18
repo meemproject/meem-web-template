@@ -1,30 +1,76 @@
 {
-  "name": "meem-web-template",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "local": "next dev",
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "js-cookie": "^3.0.1",
-    "next": "12.1.5",
-    "react": "18.0.0",
-    "react-dom": "18.0.0",
-    "superagent": "^7.1.2",
-    "swr": "^1.3.0"
-  },
-  "devDependencies": {
-    "@types/js-cookie": "^3.0.1",
-    "@types/node": "17.0.24",
-    "@types/react": "18.0.5",
-    "@types/react-dom": "18.0.0",
-    "@types/superagent": "^4.1.15",
-    "eslint": "8.13.0",
-    "eslint-config-next": "12.1.5",
-    "typescript": "4.6.3"
-  }
+	"name": "meem-web-template",
+	"version": "1.0.0",
+	"private": true,
+	"author": "Meem Project",
+	"contributors": [
+		{
+			"name": "James Gadsby",
+			"email": "james.gadsby@gmail.com"
+		},
+		{
+			"name": "Ken Goldfarb",
+			"email": "hello@kengoldfarb.com"
+		}
+	],
+	"scripts": {
+		"local": "next dev",
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "eslint --max-warnings=0 --ext=.ts,.tsx . && tsc -p . --noEmit",
+		"lint:fix": "eslint --fix --ext=.ts,.tsx .",
+		"release": "semantic-release",
+		"sls": "serverless",
+		"test": "echo \"TODO: Implement tests\"",
+		"localPackageLink": "yarn link @meemproject/api @meemproject/react @meemproject/utils react react-dom"
+		},
+	"dependencies": {
+		"@celo/wallet-walletconnect": "^3.0.1",
+		"@kengoldfarb/log": "^1.0.5",
+		"@meemproject/api": "^0.0.13",
+		"@meemproject/react": "^0.0.13",
+		"@meemproject/utils": "^0.0.13",
+		"@sentry/browser": "^6.13.2",
+		"@sentry/node": "^6.13.2",
+		"@sentry/react": "^6.13.2",
+		"@walletconnect/web3-provider": "^1.6.5",
+		"ethers": "^5.5.4",
+		"lodash": "^4.17.21",
+		"next": "^12.0.4",
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0",
+		"react-gtm-module": "^2.0.11",
+		"react-use": "^17.3.2",
+		"sass": "^1.42.1",
+		"superagent": "^6.1.0",
+		"swr": "^1.0.1",
+		"universal-cookie": "^4.0.4",
+		"walletconnect": "^1.6.5",
+		"walletlink": "^2.1.11",
+		"web3": "^1.6.1",
+		"web3modal": "^1.9.4",
+		"yup": "^0.32.9"
+	},
+	"devDependencies": {
+		"@kengoldfarb/semantic-release-config": "^1.0.3",
+		"@next/bundle-analyzer": "^12.1.5",
+		"@sentry/webpack-plugin": "^1.17.1",
+		"@typechain/ethers-v5": "^10.0.0",
+		"@types/fs-extra": "^9.0.13",
+		"@types/react": "^18.0.4",
+		"@types/react-dom": "^18.0.0",
+		"@types/superagent": "^4.1.13",
+		"@zeit/next-source-maps": "^0.0.3",
+		"eslint": "7.32.0",
+		"eslint-config-kengoldfarb": "^1.2.1",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"fs-extra": "^10.0.0",
+		"serverless": "^3.13.0",
+		"serverless-prune-plugin": "^2.0.1",
+		"ts-node": "^10.4.0",
+		"ts-node-dev": "^1.1.8",
+		"typechain": "^6.0.2",
+		"typescript": "^4.6.3"
+	}
 }
