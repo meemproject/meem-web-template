@@ -1,4 +1,3 @@
-import log, { LogLevel } from '@kengoldfarb/log'
 import { SocketProvider, WalletProvider } from '@meemproject/react'
 import type { AppProps } from 'next/app'
 import React from 'react'
