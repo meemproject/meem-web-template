@@ -1,4 +1,4 @@
-# Meem Project Web Template -
+# Meem Project Web Template
 
 ## About
 
