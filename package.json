@@ -28,9 +28,9 @@
 	"dependencies": {
 		"@celo/wallet-walletconnect": "^3.0.1",
 		"@kengoldfarb/log": "^1.0.5",
-		"@meemproject/api": "^0.0.13",
-		"@meemproject/react": "^0.0.13",
-		"@meemproject/utils": "^0.0.13",
+		"@meemproject/api": "^0.1.4",
+		"@meemproject/react": "^0.1.4",
+		"@meemproject/utils": "^0.1.4",
 		"@sentry/browser": "^6.13.2",
 		"@sentry/node": "^6.13.2",
 		"@sentry/react": "^6.13.2",
