@@ -8,7 +8,7 @@ This template project is deliberately agnostic in regards to UI components, but 
 
 ## Installation
 
-1. Create a `.env` file in the root of the project and copy over the defaults from `.env.example`.
+1. Rename `env.example` to `.env`.
 2. Open a terminal in the root of the project, and:
 3. `yarn`
 4. `yarn local`
@@ -17,5 +17,5 @@ This template project is deliberately agnostic in regards to UI components, but 
 
 `_app.tsx` contains WalletProvider and SocketProvider.
 
-- WalletProvider is your entry point for any pages or components that require a wallet address to use - for example, authenticating with the Meem API, making authenticated requests and calling the Meem contract.
+- WalletProvider is your entry point for any pages or components that require a wallet address to use - for example, authenticating with the Meem API, making authenticated requests and calling the Meem contract. Use `useWallet()` in the components you need wallet access for.
 - SocketProvider is a websocket implementation which enables you to listen to the Meem API and receive events when a Meem has been minted.
